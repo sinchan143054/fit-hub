@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fade In */
+@keyframes fadeInOpacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeInOpacity {
+  animation: fadeInOpacity 1s ease-in-out;
+}
+
+/* Slide Up */
+@keyframes slideUp {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out;
+}
+
+/* Slow Spin */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+/* neon card glow */
+.neon-card {
+  box-shadow: 0 8px 40px rgba(56, 189, 248, 0.08), 0 0 40px rgba(56, 189, 248, 0.08);
+}
+
+/* slow spin used earlier if needed */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 12s linear infinite; }

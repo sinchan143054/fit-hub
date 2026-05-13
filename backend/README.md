@@ -1,0 +1,1 @@
+FitHub backend skeleton. Run 'python app.py' inside this folder (requires dependencies).
